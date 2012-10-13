@@ -1,0 +1,20 @@
+/**
+ * Something describing this file goes here
+ */
+/* line 5, ../sass/base.scss */
+body {
+  padding: 100px;
+  font-family: Arial, Helvetica;
+  font-size: 13px;
+}
+
+/* line 11, ../sass/base.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 16, ../sass/base.scss */
+li {
+  list-style: none;
+}
