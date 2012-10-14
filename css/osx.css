@@ -6,7 +6,9 @@
   position: relative;
   width: 219px;
   height: 283px;
-  border: 1px solid #909090;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #acacac #909090 #909090 #909090;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 15px 40px 10px;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 15px 40px 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 15px 40px 10px;
@@ -22,17 +24,17 @@
   background-image: linear-gradient(top, #e8e8e8 0%, #acacac 75px);
 }
 
-/* line 18, ../sass/osx.scss */
+/* line 20, ../sass/osx.scss */
 .title-container {
   margin: 5px;
   text-align: center;
 }
-/* line 22, ../sass/osx.scss */
+/* line 24, ../sass/osx.scss */
 .title-container .window-buttons {
   position: absolute;
   cursor: default;
 }
-/* line 26, ../sass/osx.scss */
+/* line 28, ../sass/osx.scss */
 .title-container .window-buttons li {
   display: inline-block;
   width: 10px;
@@ -47,19 +49,20 @@
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 37, ../sass/osx.scss */
+/* line 39, ../sass/osx.scss */
 .title-container .window-buttons li.disabled {
   border-color: #838383 #a9a9a9 #a9a9a9 #a9a9a9;
   background-color: #cecece;
 }
-/* line 43, ../sass/osx.scss */
+/* line 45, ../sass/osx.scss */
 .title-container .title-label {
   display: inline-block;
   font-family: Arial;
   font-size: 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-/* line 50, ../sass/osx.scss */
+/* line 53, ../sass/osx.scss */
 .screen-container {
   margin: 8px auto;
   width: 189px;
@@ -70,18 +73,21 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.5) inset;
 }
-/* line 57, ../sass/osx.scss */
+/* line 61, ../sass/osx.scss */
 .screen-container .screen-input {
   float: right;
-  padding: 0 30px 0 20px;
+  padding: 3px 26px 0 20px;
 }
 
-/* line 64, ../sass/osx.scss */
+/* line 68, ../sass/osx.scss */
 .buttons-container .buttons {
   text-align: center;
 }
-/* line 67, ../sass/osx.scss */
+/* line 71, ../sass/osx.scss */
 .buttons-container .buttons .button {
   display: inline-block;
   margin: 3px 0;
@@ -89,32 +95,41 @@
   height: 24px;
   border: 1px solid #7a7a7a;
   background-color: #d4d4d3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.9) inset;
+  -moz-box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.9) inset;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.9) inset;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #d5d5d5));
+  background-image: -webkit-linear-gradient(top, #dddddd, #d5d5d5);
+  background-image: -moz-linear-gradient(top, #dddddd, #d5d5d5);
+  background-image: -o-linear-gradient(top, #dddddd, #d5d5d5);
+  background-image: linear-gradient(top, #dddddd, #d5d5d5);
   vertical-align: top;
   cursor: default;
 }
-/* line 78, ../sass/osx.scss */
+/* line 84, ../sass/osx.scss */
 .buttons-container .buttons .button .button-label {
   position: relative;
   top: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-/* line 84, ../sass/osx.scss */
+/* line 91, ../sass/osx.scss */
 .buttons-container .buttons .button.button-equals {
   height: 56px;
 }
-/* line 87, ../sass/osx.scss */
+/* line 94, ../sass/osx.scss */
 .buttons-container .buttons .button.button-equals span {
   top: 36px;
 }
-/* line 92, ../sass/osx.scss */
+/* line 99, ../sass/osx.scss */
 .buttons-container .buttons .button-zero {
   width: 92px;
 }
-/* line 96, ../sass/osx.scss */
+/* line 103, ../sass/osx.scss */
 .buttons-container .buttons .last {
   position: absolute;
   left: 13px;

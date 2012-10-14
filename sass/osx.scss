@@ -9,7 +9,9 @@
   position: relative;
   width: 219px;
   height: 283px;
-  border:  1px solid #909090;
+  border-width:  1px;
+  border-style: solid;
+  border-color: #acacac #909090 #909090 #909090;
   @include box-shadow(rgba(0,0,0,0.5) 0 15px 40px 10px);
   @include border-radius(4px);
   @include background-image(linear-gradient(top, color-stops(#e8e8e8 0, #acacac 75px)));
