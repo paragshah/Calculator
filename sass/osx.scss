@@ -5,7 +5,7 @@
 @import "compass/css3";
 @import "compass/utilities";
 
-.calc {
+.calc-osx {
   position: relative;
   width: 219px;
   height: 283px;
@@ -15,95 +15,95 @@
   @include box-shadow(rgba(0,0,0,0.5) 0 15px 40px 10px);
   @include border-radius(4px);
   @include background-image(linear-gradient(top, color-stops(#e8e8e8 0, #acacac 75px)));
-}
 
-.title-container {
-  margin: 5px;
-  text-align: center;
-
-  .window-buttons {
-    position: absolute;
-    cursor: default;
-
-    li {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-width: 1px;
-      border-style: solid;
-      border-color: #4e555a #8d9499 #8d9499 #8d9499;
-      background-color: #8b9caa;
-      @include border-radius(6px);
-    }
-
-    li.disabled {
-      border-color: #838383 #a9a9a9 #a9a9a9 #a9a9a9;
-      background-color: #cecece;
-    }
-  }
-
-  .title-label {
-    display: inline-block;
-    font-family: Arial;
-    font-size: 14px;
-    @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
-  }
-}
-
-.screen-container {
-  margin: 8px auto;
-  width: 189px;
-  height: 46px;
-  background-color: #f2f9cc;
-  @include border-radius(4px);
-  @include box-shadow(0 2px 1px -3px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.5) inset, 0 2px 2px 0 #FFFFFF);
-
-  .screen-input {
-    float: right;
-    padding: 3px 26px 0 20px;
-  }
-}
-
-.buttons-container {
-  .buttons {
+  .title-container {
+    margin: 5px;
     text-align: center;
 
-    .button {
-      display: inline-block;
-      margin: 3px 0;
-      width: 44px;
-      height: 24px;
-      border: 1px solid #7a7a7a;
-      background-color: #d4d4d3;
-      @include border-radius(5px);
-      @include box-shadow(rgba(255, 255, 255, 0.9) 0 1px 1px 1px inset, rgba(0, 0, 0, 0.5) 0 0 2px 0 inset, rgba(0, 0, 0, 0.5) 0 0 0 0 inset, rgba(0, 0, 0, 0.5) 0 0 2px -1px inset);
-      @include background-image(linear-gradient(top, #ddd, #d5d5d5));
-      vertical-align: top;
+    .window-buttons {
+      position: absolute;
       cursor: default;
 
-      .button-label {
-        position: relative;
-        top: 4px;
-        @include text-shadow(0 1px 0 rgba(255,255,255,0.8));
+      li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #4e555a #8d9499 #8d9499 #8d9499;
+        background-color: #8b9caa;
+        @include border-radius(6px);
+      }
+
+      li.disabled {
+        border-color: #838383 #a9a9a9 #a9a9a9 #a9a9a9;
+        background-color: #cecece;
       }
     }
 
-    .button.button-equals {
-      height: 56px;
+    .title-label {
+      display: inline-block;
+      font-family: Arial;
+      font-size: 14px;
+      @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+    }
+  }
 
-      span {
-        top: 36px;
+  .screen-container {
+    margin: 8px auto;
+    width: 189px;
+    height: 46px;
+    background-color: #f2f9cc;
+    @include border-radius(4px);
+    @include box-shadow(0 2px 1px -3px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.5) inset, 0 2px 2px 0 #FFFFFF);
+
+    .screen-input {
+      float: right;
+      padding: 3px 26px 0 20px;
+    }
+  }
+
+  .buttons-container {
+    .buttons {
+      text-align: center;
+
+      .button {
+        display: inline-block;
+        margin: 3px 0;
+        width: 44px;
+        height: 24px;
+        border: 1px solid #7a7a7a;
+        background-color: #d4d4d3;
+        @include border-radius(5px);
+        @include box-shadow(rgba(255, 255, 255, 0.9) 0 1px 1px 1px inset, rgba(0, 0, 0, 0.5) 0 0 2px 0 inset, rgba(0, 0, 0, 0.5) 0 0 0 0 inset, rgba(0, 0, 0, 0.5) 0 0 2px -1px inset);
+        @include background-image(linear-gradient(top, #ddd, #d5d5d5));
+        vertical-align: top;
+        cursor: default;
+
+        .button-label {
+          position: relative;
+          top: 4px;
+          @include text-shadow(0 1px 0 rgba(255,255,255,0.8));
+        }
       }
-    }
 
-    .button-zero {
-      width: 92px;
-    }
+      .button.button-equals {
+        height: 56px;
 
-    .last {
-      position: absolute;
-      left: 13px;
-      bottom: 8px;
+        span {
+          top: 36px;
+        }
+      }
+
+      .button-zero {
+        width: 92px;
+      }
+
+      .last {
+        position: absolute;
+        left: 13px;
+        bottom: 8px;
+      }
     }
   }
 }

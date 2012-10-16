@@ -2,7 +2,7 @@
  * Something describing this file goes here
  */
 /* line 8, ../sass/osx.scss */
-.calc {
+.calc-osx {
   position: relative;
   width: 219px;
   height: 283px;
@@ -23,19 +23,18 @@
   background-image: -o-linear-gradient(top, #e8e8e8 0%, #acacac 75px);
   background-image: linear-gradient(top, #e8e8e8 0%, #acacac 75px);
 }
-
-/* line 20, ../sass/osx.scss */
-.title-container {
+/* line 19, ../sass/osx.scss */
+.calc-osx .title-container {
   margin: 5px;
   text-align: center;
 }
-/* line 24, ../sass/osx.scss */
-.title-container .window-buttons {
+/* line 23, ../sass/osx.scss */
+.calc-osx .title-container .window-buttons {
   position: absolute;
   cursor: default;
 }
-/* line 28, ../sass/osx.scss */
-.title-container .window-buttons li {
+/* line 27, ../sass/osx.scss */
+.calc-osx .title-container .window-buttons li {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -49,21 +48,20 @@
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 39, ../sass/osx.scss */
-.title-container .window-buttons li.disabled {
+/* line 38, ../sass/osx.scss */
+.calc-osx .title-container .window-buttons li.disabled {
   border-color: #838383 #a9a9a9 #a9a9a9 #a9a9a9;
   background-color: #cecece;
 }
-/* line 45, ../sass/osx.scss */
-.title-container .title-label {
+/* line 44, ../sass/osx.scss */
+.calc-osx .title-container .title-label {
   display: inline-block;
   font-family: Arial;
   font-size: 14px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-
-/* line 53, ../sass/osx.scss */
-.screen-container {
+/* line 52, ../sass/osx.scss */
+.calc-osx .screen-container {
   margin: 8px auto;
   width: 189px;
   height: 46px;
@@ -77,18 +75,17 @@
   -moz-box-shadow: 0 2px 1px -3px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.5) inset, 0 2px 2px 0 white;
   box-shadow: 0 2px 1px -3px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.5) inset, 0 2px 2px 0 white;
 }
-/* line 61, ../sass/osx.scss */
-.screen-container .screen-input {
+/* line 60, ../sass/osx.scss */
+.calc-osx .screen-container .screen-input {
   float: right;
   padding: 3px 26px 0 20px;
 }
-
-/* line 68, ../sass/osx.scss */
-.buttons-container .buttons {
+/* line 67, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons {
   text-align: center;
 }
-/* line 71, ../sass/osx.scss */
-.buttons-container .buttons .button {
+/* line 70, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons .button {
   display: inline-block;
   margin: 3px 0;
   width: 44px;
@@ -111,26 +108,26 @@
   vertical-align: top;
   cursor: default;
 }
-/* line 84, ../sass/osx.scss */
-.buttons-container .buttons .button .button-label {
+/* line 83, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons .button .button-label {
   position: relative;
   top: 4px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-/* line 91, ../sass/osx.scss */
-.buttons-container .buttons .button.button-equals {
+/* line 90, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons .button.button-equals {
   height: 56px;
 }
-/* line 94, ../sass/osx.scss */
-.buttons-container .buttons .button.button-equals span {
+/* line 93, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons .button.button-equals span {
   top: 36px;
 }
-/* line 99, ../sass/osx.scss */
-.buttons-container .buttons .button-zero {
+/* line 98, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons .button-zero {
   width: 92px;
 }
-/* line 103, ../sass/osx.scss */
-.buttons-container .buttons .last {
+/* line 102, ../sass/osx.scss */
+.calc-osx .buttons-container .buttons .last {
   position: absolute;
   left: 13px;
   bottom: 8px;
